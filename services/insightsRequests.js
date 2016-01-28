@@ -3,14 +3,8 @@ var rp = require('request-promise');
 // TESTING REQUEST-PROMISE
 module.exports = {
 
-resultSearch: function (object){
-
-
-
-},
-
 requestRecursion: function(array,recursionFunction){
-
+	
 	array.forEach(recursionFunction);
 
 },

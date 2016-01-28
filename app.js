@@ -14,6 +14,10 @@ var rp              = require('request-promise');
 var mongoose        = require ('mongoose');
 var mongo           = require('mongodb');
 
+// nodemailer require and set up
+var nodemailer = require('nodemailer');
+var mailerFunctions = require('./services/sendEmail.js')
+
 //var requestService  = require('/services/insightsRequests.js') 
 
 // Mongoose Instantiation
@@ -78,6 +82,9 @@ app.use(function(err, req, res, next) {
   });
 });
 
+
+//Testing nodemailer
+mailerFunctions.sendNewMail();
 
 //testing insights stuff and stuff
 
